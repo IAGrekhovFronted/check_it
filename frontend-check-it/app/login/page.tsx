@@ -20,7 +20,7 @@ const LoginPage: React.FC = () => {
             name="username"
             id="username"
             className="border rounded-md w-full"
-            // required
+            required
           />
         </div>
         <div>
@@ -32,7 +32,7 @@ const LoginPage: React.FC = () => {
             name="password"
             id="password"
             className="border rounded-md w-full"
-            // required
+            required
           />
         </div>
         <button type="submit" className="border rounded-md mt-2">

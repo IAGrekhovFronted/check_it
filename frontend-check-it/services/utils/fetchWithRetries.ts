@@ -19,7 +19,7 @@ export async function fetchWithRetries(props: {
     const response = await fetch(url, { method, headers, body });
 
     if (!response.ok) {
-      throw response;
+      throw response.statusText;
     }
 
     return response;

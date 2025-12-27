@@ -6,6 +6,7 @@ import { KeycloakTokenResponse, Tokens } from "./keycloak.models";
 export class KeycloakService {
   private tokenUrl = config.keycloakConfig.urlToken;
   private clientId = config.keycloakConfig.clientId;
+  private clientSecret = config.keycloakConfig.clientSecret;
 
   async authByPassword(username: string, password: string) {
     const tokens = await this.getToken({
@@ -45,6 +46,7 @@ export class KeycloakService {
       method: "POST",
       body: new URLSearchParams({
         client_id: this.clientId,
+        client_secret: this.clientSecret,
         ...body,
       }),
     });
