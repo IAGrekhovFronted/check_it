@@ -56,3 +56,5 @@ export class KeycloakService {
     return response.json();
   }
 }
+
+export const keycloak = new KeycloakService();
