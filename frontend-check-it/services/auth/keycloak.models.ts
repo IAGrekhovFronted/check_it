@@ -1,0 +1,12 @@
+export type KeycloakTokenResponse = {
+  access_token: string;
+  refresh_token: string;
+  expires_in: number;
+  refresh_expires_in: number;
+  token_type: string;
+};
+
+export type Tokens = {
+  access_token: string;
+  refresh_token: string;
+};
