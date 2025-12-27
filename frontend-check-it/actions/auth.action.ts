@@ -1,6 +1,6 @@
 import { keycloak } from "@services/auth/keycloak.service";
 
-export async function authByPasswod(form: FormData) {
+export async function authByPassword(form: FormData) {
   "use server";
 
   const usernameEntry = form.get("username");

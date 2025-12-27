@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.bg-gradient-radial {
+  background: radial-gradient(
+    circle at center,
+    #ffffff 0%,
+    #ffffff 30%,
+    #cce7ff 50%,
+    #99d1ff 100%
+  );
+  min-height: 100vh;
+}
+
+img.bg-transparent {
+  background: transparent;
+}
